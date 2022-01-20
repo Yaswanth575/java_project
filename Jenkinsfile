@@ -9,7 +9,7 @@ node{
     }
     stage('Upload War To Nexus'){
         steps{
-            nexusArtifactUploader artifacts: [[artifactId: 'java-web-app', classifier: '', file: 'target/Maven Web Application-1.0.war', type: 'war']], credentialsId: '', groupId: 'com.mt', nexusUrl: '172.31.4.121:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops-project', version: '1.0'
+            nexusArtifactUploader credentialsId: '301a3d41-a5a4-478b-b962-971f178fb731', groupId: 'group', nexusUrl: '13.40.34.215:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops-project', version: '1'
         }
     }
     
